@@ -4,6 +4,14 @@
 
 > Um simulador em Python que representa como seriam os átomos em seus modelos quânticos visualmente.
 
+## Status
+
+🚧 **Work in Progress**
+
+## Credits
+
+Created by **dr3st-d3**.
+
 ## Workstation Tools
 
 <p align="center">
