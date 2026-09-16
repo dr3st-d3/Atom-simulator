@@ -22,4 +22,4 @@ Created by **dr3st-d3**.
 
 ##
 
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=f4d03f&height=120&section=footer"/>
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=a349a4&height=120&section=footer"/>
