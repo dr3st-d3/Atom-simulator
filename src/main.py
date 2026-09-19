@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def funcao_da_onda_1s(r):                          # Define a Função da Onda de 1s;
-    return (1 / math.sqrt(math.pi)) * np.exp(-r) # Retorne: 1 sobre raiz quadrada de "pi" vezes "e" elevado a "-r" -> (1/√π) * e^(-r); 
+    return (1 / math.sqrt(math.pi)) * np.exp(-r)   # Retorne: 1 sobre raiz quadrada de "pi" vezes "e" elevado a "-r" -> (1/√π) * e^(-r); 
 
 def densidade_de_probabilidade_1s(r):              # Define a Densidade de Probabilidade de 1s;
     psi = funcao_da_onda_1s(r)                     # ψ = Função da Onda de 1s(r);
