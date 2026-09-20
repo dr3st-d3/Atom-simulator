@@ -15,8 +15,10 @@
 
 <p align="center">The <strong>primary objective</strong> of this application is to represent the 1s orbital of the hydrogen atom.</p>
 
-> def funcao_da_onda_1s(r):                                    # Define the 1s wave function;
->    return (1 / math.sqrt(math.pi)) * np.exp(-r)              # Return: 1 divided by the square root of "pi" times "e" raised to the power of "-r" -> (1/√π) * e^(-r);
+```bash
+ def funcao_da_onda_1s(r):                                    # Define the 1s wave function;
+    return (1 / math.sqrt(math.pi)) * np.exp(-r)              # Return: 1 divided by the square root of "pi" times "e" raised to the power of "-r" -> (1/√π) * e^(-r);
+```
 
 <p align="center">The expression above represents the ground-state wave function of hydrogen:</p>
   <div align="center">
