@@ -22,7 +22,7 @@
 
 <p align="center">The expression above represents the ground-state wave function of hydrogen:</p>
   <div align="center">
-    <img src="https://github.com/dr3st-d3/Atom-simulator/blob/main/for_readme/estado_fundamental_h.png" alt="FirstCloud" width="150"/>
+    <img src="https://github.com/dr3st-d3/Atom-simulator/blob/main/for_readme/estado_fundamental_h.png" alt="FirstCloud" width="200"/>
   </div>
 
 <p>More details coming soon...</p>
@@ -67,9 +67,9 @@ Created by **dr3st-d3**.
     return (1 / math.sqrt(math.pi)) * np.exp(-r)              # Retorne: 1 sobre raiz quadrada de "pi" vezes "e" elevado a "-r" -> (1/√π) * e^(-r);
 ```
 
-<p align="center">O trecho acima representa a função de onda do estado fundamental do hidrogênio: </p>
+<p align="center">O trecho acima representa a função de onda do estado fundamental do hidrogênio:</p>
   <div align="center">
-    <img src="https://github.com/dr3st-d3/Atom-simulator/blob/main/for_readme/estado_fundamental_h.png" alt="FirstCloud" width="500"/>
+    <img src="https://github.com/dr3st-d3/Atom-simulator/blob/main/for_readme/estado_fundamental_h.png" alt="FirstCloud" width="200"/>
   </div>
 
 <p>Em breve mais detalhes...</p>
