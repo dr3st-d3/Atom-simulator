@@ -8,11 +8,11 @@
 
 🚧 **Work in Progress**
 
-<p align="center">The First Visualisation
+<p align="center">The First Visualisation</p>
   <a align="center">
     <img src="https://github.com/dr3st-d3/Atom-simulator/blob/main/for_readme/first_probability_cloud.gif" alt="FirstCloud" width="500"/>
   </a>
-</p>
+
 
 ## Workstation Tools
 
