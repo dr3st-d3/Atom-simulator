@@ -1,5 +1,6 @@
 import math
 import numpy as np
+import pyvista as pv
 
 def funcao_da_onda_1s(r):                                    # Define a Função da Onda de 1s;
     return (1 / math.sqrt(math.pi)) * np.exp(-r)             # Retorne: 1 sobre raiz quadrada de "pi" vezes "e" elevado a "-r" -> (1/√π) * e^(-r); 
@@ -14,23 +15,52 @@ def distribuicao_radial_1s(r):                               # Define a Distribu
 
 quantidade_pontos = 10000
 
-pontos_x = np.random.uniform(-5, 5, quantidade_pontos)
-pontos_y = np.random.uniform(-5, 5, quantidade_pontos)
-pontos_z = np.random.uniform(-5, 5, quantidade_pontos)
-
-R_pontos = np.sqrt(
-    pontos_x**2 +
-    pontos_y**2 +
-    pontos_z**2
+raios = np.random.gamma(
+    shape=3,
+    scale=0.5,
+    size=quantidade_pontos
 )
 
-densidade_pontos = densidade_de_probabilidade_1s(R_pontos)
+cos_theta = np.random.uniform(
+    -1,
+    1,
+    quantidade_pontos
+)
+
+phi = np.random.uniform(
+    0,
+    2 * math.pi,
+    quantidade_pontos
+)
+
+sin_theta = np.sqrt(1 - cos_theta**2)
+
+pontos_x = raios * sin_theta * np.cos(phi)
+pontos_y = raios * sin_theta * np.sin(phi)
+pontos_z = raios * cos_theta
+
+pontos = np.column_stack((
+    pontos_x,
+    pontos_y,
+    pontos_z
+))
+
+nuvem = pv.PolyData(pontos)
+
+plotter = pv.Plotter()
+
+plotter.add_points(
+    nuvem,
+    point_size=5,
+    render_points_as_spheres=True
+)
 
 print()
-print("----------PONTOS ALEATÓRIOS----------")
-print(f"Quantidade de Pontos: {quantidade_pontos}")
-print(f"Formato dos Pontos X: {pontos_x.shape}")
-print(f"Formato dos Pontos Y: {pontos_y.shape}")
-print(f"Formato dos Pontos Z: {pontos_z.shape}")
-print(f"Formato de densidade_pontos: {densidade_pontos.shape}")
+print("----------AMOSTRAGEM RADIAL----------")
+print(f"Quantidade de pontos: {quantidade_pontos}")
+print(f"Menor raio: {raios.min():.4f}")
+print(f"Maior raio: {raios.max():.4f}")
+print(f"Raio médio: {raios.mean():.4f}")
 print()
+
+plotter.show()
