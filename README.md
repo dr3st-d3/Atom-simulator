@@ -20,7 +20,7 @@
 
 <p align="center">The expression above represents the ground-state wave function of hydrogen:</p>
   <div align="center">
-    <img src="https://github.com/dr3st-d3/Atom-simulator/blob/main/for_readme/estado_fundamental_h.png" alt="FirstCloud" width="500"/>
+    <img src="https://github.com/dr3st-d3/Atom-simulator/blob/main/for_readme/estado_fundamental_h.png" alt="FirstCloud" width="150"/>
   </div>
 
 <p>More details coming soon...</p>
