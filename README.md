@@ -62,8 +62,10 @@ Created by **dr3st-d3**.
 
 <p align="center">O <strong>primeiro objetivo</strong> dessa aplicação é representar o orbital 1s do átomo de hidrogênio.</p>
 
-> def funcao_da_onda_1s(r):                                    # Define a Função da Onda de 1s;
->    return (1 / math.sqrt(math.pi)) * np.exp(-r)              # Retorne: 1 sobre raiz quadrada de "pi" vezes "e" elevado a "-r" -> (1/√π) * e^(-r);
+```bash
+ def funcao_da_onda_1s(r):                                    # Define a Função da Onda de 1s;
+    return (1 / math.sqrt(math.pi)) * np.exp(-r)              # Retorne: 1 sobre raiz quadrada de "pi" vezes "e" elevado a "-r" -> (1/√π) * e^(-r);
+```
 
 <p align="center">O trecho acima representa a função de onda do estado fundamental do hidrogênio: </p>
   <div align="center">
